@@ -1,0 +1,11 @@
+.glitchprofile { overflow: auto; }
+.glitchprofile p { margin: 0; }
+.glitchprofile-avatar { float: right; }
+.glitchprofile-list { 
+	background: url(sprite.png) no-repeat;
+	padding-left: 25px;
+}
+.glitchprofile-list-imagination { background-position: 0 5px; }
+.glitchprofile-list-energy { background-position: 0 -28px; }
+.glitchprofile-list-braincapacity { background-position: 0 -60px; }
+.glitchprofile-list-mood { background-position: 0 -90px; }
