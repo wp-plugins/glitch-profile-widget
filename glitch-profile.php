@@ -45,8 +45,8 @@ class GlitchProfileWidget extends WP_Widget {
 		extract($args, EXTR_SKIP);
 
 		wp_enqueue_script('jquery');
-		wp_enqueue_script('glitchprofile-js', '/wp-content/plugins/glitch-profile/glitchprofile.js', array('jquery'));
-		wp_enqueue_style('glitchprofile-css', '/wp-content/plugins/glitch-profile/glitchprofile.css');
+		wp_enqueue_script('glitchprofile-js', plugin_dir_url( __FILE__ ).'glitchprofile.js', array('jquery'));
+		wp_enqueue_style('glitchprofile-css', plugin_dir_url( __FILE__ ).'glitchprofile.css');
 		
 		// Get data
 		$cache_url = sprintf('%scache/%s.js', plugin_dir_path( __FILE__ ), $instance['glitch_id']);
